@@ -2,7 +2,6 @@
 
 import { use, useCallback } from "react";
 import { useRouter } from "next/navigation";
-import ReactLenis from "lenis/react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ProductDetailCard from "@/components/ecommerce/productDetail/ProductDetailCard";
 import ProductCart from "@/components/ecommerce/cart/ProductCart";
@@ -80,13 +79,11 @@ export default function ProductPage({ params }: ProductPageProps) {
                 secondaryButtonStyle="layered"
                 headingFontWeight="bold"
             >
-                <ReactLenis root>
-                    <div id="navbar" data-section="navbar">
+                    <div id="nav" data-section="nav">
                     <NavbarLayoutFloatingOverlay
                         brandName="Superkot"
                         navItems={[
                             { name: "Home", id: "/" },
-                            { name: "Shop", id: "/shop" },
                         ]}
                         button={{ text: "Cart", onClick: () => setCartOpen(true) }}
                     />
@@ -101,7 +98,6 @@ export default function ProductPage({ params }: ProductPageProps) {
                             rightLink={{ text: "Privacy Policy", href: "#" }}
                         />
                     </div>
-                </ReactLenis>
             </ThemeProvider>
         );
     }
@@ -120,13 +116,11 @@ export default function ProductPage({ params }: ProductPageProps) {
                 secondaryButtonStyle="layered"
                 headingFontWeight="bold"
             >
-                <ReactLenis root>
-                    <div id="navbar" data-section="navbar">
+                    <div id="nav" data-section="nav">
                         <NavbarLayoutFloatingOverlay
                             brandName="Superkot"
                             navItems={[
                                 { name: "Home", id: "/" },
-                                { name: "Shop", id: "/shop" },
                             ]}
                             button={{ text: "Cart", onClick: () => setCartOpen(true) }}
                         />
@@ -149,7 +143,6 @@ export default function ProductPage({ params }: ProductPageProps) {
                             rightLink={{ text: "Privacy Policy", href: "#" }}
                         />
                     </div>
-                </ReactLenis>
             </ThemeProvider>
         );
     }
@@ -167,13 +160,11 @@ export default function ProductPage({ params }: ProductPageProps) {
             secondaryButtonStyle="layered"
             headingFontWeight="bold"
         >
-            <ReactLenis root>
-                <div id="navbar" data-section="navbar">
+                <div id="nav" data-section="nav">
                 <NavbarLayoutFloatingOverlay
                     brandName="Superkot"
                     navItems={[
                         { name: "Home", id: "/" },
-                        { name: "Shop", id: "/shop" },
                     ]}
                     button={{ text: "Cart", onClick: () => setCartOpen(true) }}
                 />
@@ -221,7 +212,6 @@ export default function ProductPage({ params }: ProductPageProps) {
                         rightLink={{ text: "Privacy Policy", href: "#" }}
                     />
                 </div>
-            </ReactLenis>
         </ThemeProvider>
     );
 }
