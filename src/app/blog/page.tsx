@@ -1,6 +1,5 @@
 "use client";
 
-import ReactLenis from "lenis/react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import BlogCardTwo from '@/components/sections/blog/BlogCardTwo';
@@ -23,17 +22,11 @@ export default function BlogPage() {
             secondaryButtonStyle="layered"
             headingFontWeight="bold"
         >
-            <ReactLenis root>
                 <div id="nav" data-section="nav">
                     <NavbarLayoutFloatingOverlay
                         brandName="Superkot"
                         navItems={[
                             { name: "Home", id: "/" },
-                            { name: "Legend", id: "legend" },
-                            { name: "Skills", id: "skills" },
-                            { name: "Stats", id: "stats" },
-                            { name: "Fans", id: "fans" },
-                            { name: "Contact", id: "contact" },
                         ]}
                         button={{ text: "Get Schooled" }}
                     />
@@ -64,7 +57,6 @@ export default function BlogPage() {
                             rightLink={{ text: "Privacy Policy", href: "#" }}
                         />
                     </div>
-            </ReactLenis>
         </ThemeProvider>
     );
 }
