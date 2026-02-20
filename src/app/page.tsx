@@ -65,7 +65,7 @@ export default function LandingPage() {
           ]}
           useInvertedBackground={false}
           tag="The Art of Misplay"
-          imageSrc="https://img.b2bpic.net/free-photo/front-view-young-soldier-camouflage-with-gun-black-wall_140725-96009.jpg"
+          imageSrc="https://img.b2bpic.net/free-photo/front-view-young-soldier-camouflage-with-gun-black-wall_140725-96009.jpg?_wi=1"
           imageAlt="A cartoon illustration of a CS2 team being flashed by a friendly grenade."
           mediaAnimation='slide-up'
           metricsAnimation='slide-up'
@@ -89,7 +89,7 @@ export default function LandingPage() {
             {
               id: '2',
               title: 'The Friendly Fire Flashbang',
-              description: "His signature move: the perfectly timed, perfectly placed flashbang... directly into his teammates' faces. Opponents often wonder how his team even moves.",              media: { imageSrc: 'https://img.b2bpic.net/free-photo/front-view-young-soldier-camouflage-with-gun-black-wall_140725-96009.jpg', imageAlt: 'Another angle of a CS2 team being blinded by a friendly flashbang.' },
+              description: "His signature move: the perfectly timed, perfectly placed flashbang... directly into his teammates' faces. Opponents often wonder how his team even moves.",              media: { imageSrc: 'https://img.b2bpic.net/free-photo/front-view-young-soldier-camouflage-with-gun-black-wall_140725-96009.jpg?_wi=2', imageAlt: 'Another angle of a CS2 team being blinded by a friendly flashbang.' },
               items: [
                 { icon: Ghost, text: 'Turns allies into ghosts (temporarily)' },
                 { icon: Crosshair, text: 'Enemy vision remains pristine' },
