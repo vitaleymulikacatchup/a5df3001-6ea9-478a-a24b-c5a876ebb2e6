@@ -65,8 +65,10 @@ export default function LandingPage() {
           ]}
           useInvertedBackground={false}
           tag="The Art of Misplay"
-          imageSrc="https://img.b2bpic.net/free-photo/front-view-young-soldier-camouflage-with-gun-black-wall_140725-96009.jpg?_wi=1"
+          imageSrc="https://img.b2bpic.net/free-photo/front-view-young-soldier-camouflage-with-gun-black-wall_140725-96009.jpg"
           imageAlt="A cartoon illustration of a CS2 team being flashed by a friendly grenade."
+          mediaAnimation='slide-up'
+          metricsAnimation='slide-up'
         />
       </div>
 
@@ -77,7 +79,7 @@ export default function LandingPage() {
               id: '1',
               title: 'Master of Self-Sacrifice',
               description: 'Vitaliy excels at trading his own life for absolutely no tactical advantage. A true pioneer in negative K/D strategies, ensuring the enemy team never gets overconfident.',
-              media: { imageSrc: 'https://img.b2bpic.net/free-photo/young-professional-game-player-screaming-with-hands-raised-after-his-victory_482257-29597.jpg', imageAlt: 'Superkot striking a humorous pose after a \'successful\' self-sacrifice.' },
+              media: { imageSrc: 'https://img.b2bpic.net/free-photo/young-professional-game-player-screaming-with-hands-raised-after-his-victory_482257-29597.jpg', imageAlt: "Superkot striking a humorous pose after a 'successful' self-sacrifice." },
               items: [
                 { icon: Zap, text: 'Guaranteed 0.0 K/D' },
                 { icon: Bomb, text: 'Frequent accidental bomb drops' },
@@ -87,8 +89,7 @@ export default function LandingPage() {
             {
               id: '2',
               title: 'The Friendly Fire Flashbang',
-              description: 'His signature move: the perfectly timed, perfectly placed flashbang... directly into his teammates\' faces. Opponents often wonder how his team even moves.',
-              media: { imageSrc: 'https://img.b2bpic.net/free-photo/front-view-young-soldier-camouflage-with-gun-black-wall_140725-96009.jpg?_wi=2', imageAlt: 'Another angle of a CS2 team being blinded by a friendly flashbang.' },
+              description: "His signature move: the perfectly timed, perfectly placed flashbang... directly into his teammates' faces. Opponents often wonder how his team even moves.",              media: { imageSrc: 'https://img.b2bpic.net/free-photo/front-view-young-soldier-camouflage-with-gun-black-wall_140725-96009.jpg', imageAlt: 'Another angle of a CS2 team being blinded by a friendly flashbang.' },
               items: [
                 { icon: Ghost, text: 'Turns allies into ghosts (temporarily)' },
                 { icon: Crosshair, text: 'Enemy vision remains pristine' },
@@ -142,10 +143,10 @@ export default function LandingPage() {
       <div id="faq" data-section="faq">
         <FaqDouble
           faqs={[
-            { id: '1', title: 'Is Vitaliy \'Superkot\' Zalupenko actually real?', content: 'Of course! Legends aren\'t born; they\'re made through countless friendly fire incidents and 0-kill games. You can\'t make this level of \'skill\' up!' },
-            { id: '2', title: 'How can I get Superkot on my team?', content: 'You don\'t. Superkot chooses you. Usually, it\'s a random matchmaking assignment, a cosmic joke played by the CS2 gods, or a desperate plea from an enemy team wanting a handicap.' },
-            { id: '3', title: 'What\'s his secret to 0 kills?', content: 'It\'s a closely guarded secret, rumored to involve advanced wall-staring techniques, strategic weapon drops for the enemy, and an unwavering commitment to \'not engaging\'.' },
-            { id: '4', title: 'Does he ever get frustrated?', content: 'Superkot remains calm under pressure, often attributing his performance to \'server lag\' or \'tactical deception\'. His composure is truly admirable, if not understandable.' },
+            { id: '1', title: "Is Vitaliy 'Superkot' Zalupenko actually real?", content: "Of course! Legends aren't born; they're made through countless friendly fire incidents and 0-kill games. You can't make this level of 'skill' up!" },
+            { id: '2', title: 'How can I get Superkot on my team?', content: "You don't. Superkot chooses you. Usually, it's a random matchmaking assignment, a cosmic joke played by the CS2 gods, or a desperate plea from an enemy team wanting a handicap." },
+            { id: '3', title: "What's his secret to 0 kills?", content: "It's a closely guarded secret, rumored to involve advanced wall-staring techniques, strategic weapon drops for the enemy, and an unwavering commitment to 'not engaging'." },
+            { id: '4', title: 'Does he ever get frustrated?', content: "Superkot remains calm under pressure, often attributing his performance to 'server lag' or 'tactical deception'. His composure is truly admirable, if not understandable." },
           ]}
           title="Frequently Asked (and Feared) Questions"
           description="Got burning questions about the enigma that is Superkot? We've got 'answers'!"
@@ -159,7 +160,7 @@ export default function LandingPage() {
         <ContactFaq
           faqs={[
             { id: '1', title: 'Can I challenge Superkot to a 1v1?', content: 'You can try, but prepare for an unexpected flurry of self-flashes and perhaps even a game-breaking bug unique to his presence. The outcome is never what you expect.' },
-            { id: '2', title: 'Does Superkot offer coaching?', content: 'Absolutely! If your goal is to master the art of losing gracefully, or confusing your opponents with pure incompetence, then Superkot is your man. (Disclaimer: Results may vary, mostly downwards.)' },
+            { id: '2', title: 'Does Superkot offer coaching?', content: "Absolutely! If your goal is to master the art of losing gracefully, or confusing your opponents with pure incompetence, then Superkot is your man. (Disclaimer: Results may vary, mostly downwards.)" },
           ]}
           ctaTitle="Support Superkot's 'Journey'"
           ctaDescription="Want to donate for better gear (that he'll still misuse) or just send words of encouragement (or despair)? Contact Superkot's management team."
