@@ -1,6 +1,5 @@
 "use client";
 
-import ReactLenis from "lenis/react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ProductCatalog from "@/components/ecommerce/productCatalog/ProductCatalog";
 import { useProductCatalog } from "@/hooks/useProductCatalog";
@@ -30,13 +29,11 @@ export default function ShopPage() {
                 secondaryButtonStyle="layered"
                 headingFontWeight="bold"
             >
-                <ReactLenis root>
-                    <div id="navbar" data-section="navbar">
+                    <div id="nav" data-section="nav">
                         <NavbarLayoutFloatingOverlay
                             brandName="Superkot"
                             navItems={[
                                 { name: "Home", id: "/" },
-                                { name: "Shop", id: "/shop" },
                             ]}
                             button={{ text: "Cart", onClick: () => {} }}
                         />
@@ -51,7 +48,6 @@ export default function ShopPage() {
                             rightLink={{ text: "Privacy Policy", href: "#" }}
                         />
                     </div>
-                </ReactLenis>
             </ThemeProvider>
         );
     }
@@ -69,13 +65,11 @@ export default function ShopPage() {
             secondaryButtonStyle="layered"
             headingFontWeight="bold"
         >
-            <ReactLenis root>
-                <div id="navbar" data-section="navbar">
+                <div id="nav" data-section="nav">
                     <NavbarLayoutFloatingOverlay
                         brandName="Superkot"
                         navItems={[
                             { name: "Home", id: "/" },
-                            { name: "Shop", id: "/shop" },
                         ]}
                         button={{ text: "Cart", onClick: () => {} }}
                     />
@@ -98,7 +92,6 @@ export default function ShopPage() {
                         rightLink={{ text: "Privacy Policy", href: "#" }}
                     />
                 </div>
-            </ReactLenis>
         </ThemeProvider>
     );
 }
